@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html >
+<head>
+	<meta charset="utf-8">
+	<title>职位申请表</title>
+<script language="javascript">
+  function agree(){
+       if(document.getElementById('cb').checked)
+              document.getElementById('tj').disabled=false;
+    else
+        document.getElementById('tj').disabled='disabled';  
+  }   
+  </script>
+</head>
+<body>
+	<h2>申请表</h2>
+	<form  id="form1">
+ 	<div>
+ 		<label for="i01">姓名：</label>
+ 		<input type="username" name="" id="i01">
+ 	</div>
+ 	<div>
+ 		<label for="i02">密码：</label>
+ 		<input type="password" name="" id="i02">
+ 	</div>
+     
+    <div>
+ 		<label>照片：</label>
+ 		<input type="file" name="">
+ 	</div>
+
+ 	 <div>
+ 		<label>感兴趣的职位：</label>
+ 		<input  type="radio" name="position">Web设计
+ 	 	<input  type="radio" name="position">Web开发
+ 	</div>
+
+
+     <div>
+ 		<label> 向往城市：</label>
+ 		<select>
+  	 	<option>请选择</option>
+   		<option>北京</option>
+   		<option>上海</option>
+   		<option>深圳</option>
+   		<option>广州</option>    
+   		</select>
+ 	</div>
+       
+ 	<div>
+ 		<label>协议：</label>
+ 		    <textarea name="request" cols="26" rows="5" readonly="readonly">求职信息必须真实、准确，本网站只负责向企业推荐。</textarea>
+            <input name="confirm"  type="checkbox" onclick="agree();" id="cb"/>我认真阅读并接受以上协议。
+ 	</div>
+ 	<div>
+ 		<label>经验:</label>
+ 		  <select>
+   	      <option>无经验</option>
+   		  <option>1年</option>
+   		  <option>3年</option>
+   		  <option>5年</option>
+          </select>
+ 	</div>
+ 	<div>
+ 	<input type="submit"  name="" value="提交" disabled="disabled" id="tj" />
+	<input type="reset"  name=""  value="重置" /></p>
+ 	</div>
+ </form>
+</body>
+</html>
+   
+ 
+
+
+ 
+
+
+
+
+      
+  
